@@ -20,16 +20,16 @@
             width: 300px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            /* Fundo com transparência */
+            background-color: rgba(255, 255, 255, 0.15); /* Cor do resultado com transparência */
+            backdrop-filter: blur(10px); /* Efeito de vidro */
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            /* Sombra suave */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
         }
 
         p,
         a {
             text-decoration: none;
+            color: black;
         }
 
         button {
@@ -39,6 +39,7 @@
             width: 100px;
             border-radius: 7px;
             cursor: pointer;
+            background: rgba(255, 255, 255, 0.3); /* Cor do botão com transparência */
         }
 
         button:hover {
@@ -53,7 +54,7 @@
     <div class="resultado">
         <?php
         // Verifica se os campos foram preenchidos
-        if (isset ($_POST['nome']) && isset ($_POST['nota1']) && isset ($_POST['nota2'])) {
+        if (isset($_POST['nome']) && isset($_POST['nota1']) && isset($_POST['nota2'])) {
             // Recupera os valores informados pelo usuário
             $nome = $_POST['nome'];
             $nota1 = $_POST['nota1'];

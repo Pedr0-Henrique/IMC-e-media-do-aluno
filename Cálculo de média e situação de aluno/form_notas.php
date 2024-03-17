@@ -21,7 +21,8 @@
             margin: 0 auto;
             padding: 20px;
             margin-top: 40px;
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.15); /* Cor do formulário com transparência */
+            backdrop-filter: blur(10px); /* Efeito de vidro */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -32,6 +33,9 @@
             margin-bottom: 10px;
             box-sizing: border-box;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgba(255, 255, 255, 0.3); /* Cor do input com transparência */
+            border: none;
+            border-radius: 5px;
         }
 
         input[type="submit"] {
@@ -41,6 +45,7 @@
             width: 100px;
             border-radius: 7px;
             cursor: pointer;
+            background: rgba(255, 255, 255, 0.3); /* Cor do botão com transparência */
         }
 
         input[type="submit"]:hover {
@@ -57,7 +62,10 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-           
+            color: black;
+        }
+
+        ::placeholder{
             color: black;
         }
 
@@ -81,3 +89,4 @@
 </body>
 
 </html>
+

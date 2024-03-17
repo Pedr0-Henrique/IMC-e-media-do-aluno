@@ -8,20 +8,27 @@
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #010937, #8a2be2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        
-        .resultado { 
+
+        .resultado {
             width: 300px;
             margin: 0 auto;
             padding: 20px;
-            margin-top: 194px;
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.15); /* Cor do resultado com transparência */
+            backdrop-filter: blur(10px); /* Efeito de vidro */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         a {
             text-decoration: none;
         }
+
         button {
             color: blue;
             border: none;
@@ -29,12 +36,17 @@
             width: 100px;
             border-radius: 7px;
             cursor: pointer;
+            background: rgba(255, 255, 255, 0.3); /* Cor do botão com transparência */
         }
 
         button:hover {
             color: white;
             background-color: #3b82f6;
             box-shadow: 0 0 0 5px #3b83f65f;
+        }
+
+        p {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -67,9 +79,10 @@
             echo "<p>Por favor, preencha todos os campos.</p>";
         }
         ?>
-        <p><a href="form_imc.html"><button>Calcular novamente</button></a></p>
+        <p><a href="form_imc.php"><button>Calcular novamente</button></a></p>
     </div>
 </body>
 </html>
+
 
 
